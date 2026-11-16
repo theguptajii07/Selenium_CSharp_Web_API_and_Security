@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yXjcAC+HSDg=",
+  "dgSpecHash": "3EJic6QuaLs=",
   "success": true,
   "projectFilePath": "C:\\Users\\thegu\\RiderProjects\\Selenium_CSharp_Web_API_and_Security\\WebTests\\WebTests.csproj",
   "expectedPackageFiles": [
@@ -18,7 +18,9 @@
     "C:\\Users\\thegu\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\thegu\\.nuget\\packages\\nunit\\4.3.2\\nunit.4.3.2.nupkg.sha512",
     "C:\\Users\\thegu\\.nuget\\packages\\nunit.analyzers\\4.7.0\\nunit.analyzers.4.7.0.nupkg.sha512",
-    "C:\\Users\\thegu\\.nuget\\packages\\nunit3testadapter\\5.0.0\\nunit3testadapter.5.0.0.nupkg.sha512"
+    "C:\\Users\\thegu\\.nuget\\packages\\nunit3testadapter\\5.0.0\\nunit3testadapter.5.0.0.nupkg.sha512",
+    "C:\\Users\\thegu\\.nuget\\packages\\selenium.support\\4.52.0\\selenium.support.4.52.0.nupkg.sha512",
+    "C:\\Users\\thegu\\.nuget\\packages\\selenium.webdriver\\4.52.0\\selenium.webdriver.4.52.0.nupkg.sha512"
   ],
   "logs": []
 }

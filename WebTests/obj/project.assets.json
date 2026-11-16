@@ -615,6 +615,56 @@
           "build/netcoreapp3.1/NUnit3TestAdapter.props": {},
           "build/netcoreapp3.1/NUnit3TestAdapter.targets": {}
         }
+      },
+      "Selenium.Support/4.52.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.52.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Selenium.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Selenium.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.52.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Selenium.WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Selenium.WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm64/native/selenium-manager": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-x64/native/selenium-manager": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx/native/selenium-manager": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/win/native/selenium-manager.exe": {
+            "assetType": "native",
+            "rid": "win"
+          }
+        }
       }
     }
   },
@@ -1504,6 +1554,51 @@
         "nunit3testadapter.nuspec",
         "nunit_256.png"
       ]
+    },
+    "Selenium.Support/4.52.0": {
+      "sha512": "14Lqh5OIs7hM4WUMJo16XUgRgZHvnBfEY1AtN1rPOxBXlCyDXr5A78OQiTx9HA180c0Xh3e6NwkTR4A5D5DlAw==",
+      "type": "package",
+      "path": "selenium.support/4.52.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NOTICE",
+        "icon.png",
+        "lib/netstandard2.0/Selenium.Support.dll",
+        "lib/netstandard2.0/Selenium.Support.xml",
+        "selenium.support.4.52.0.nupkg.sha512",
+        "selenium.support.nuspec"
+      ]
+    },
+    "Selenium.WebDriver/4.52.0": {
+      "sha512": "ISAxyCkxAQ1pvJ9/9619q4DTdvuW4zaJydxoSqNFS7Db8JytgilbJXYHg7xwpGXXjNwXSx/07hqaKwL0Unf+pg==",
+      "type": "package",
+      "path": "selenium.webdriver/4.52.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NOTICE",
+        "README.md",
+        "build/Selenium.WebDriver.props",
+        "buildTransitive/Selenium.WebDriver.props",
+        "icon.png",
+        "lib/net462/Selenium.WebDriver.dll",
+        "lib/net462/Selenium.WebDriver.xml",
+        "lib/net8.0/Selenium.WebDriver.dll",
+        "lib/net8.0/Selenium.WebDriver.xml",
+        "lib/netstandard2.0/Selenium.WebDriver.dll",
+        "lib/netstandard2.0/Selenium.WebDriver.xml",
+        "runtimes/linux-arm64/native/selenium-manager",
+        "runtimes/linux-x64/native/selenium-manager",
+        "runtimes/osx/native/selenium-manager",
+        "runtimes/win/native/selenium-manager.exe",
+        "selenium-manager-THIRD-PARTY-NOTICES.txt",
+        "selenium-manager.cdx.json",
+        "selenium.webdriver.4.52.0.nupkg.sha512",
+        "selenium.webdriver.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -1512,6 +1607,8 @@
       "NUnit >= 4.3.2",
       "NUnit.Analyzers >= 4.7.0",
       "NUnit3TestAdapter >= 5.0.0",
+      "Selenium.Support >= 4.52.0",
+      "Selenium.WebDriver >= 4.52.0",
       "coverlet.collector >= 6.0.4"
     ]
   },
@@ -1583,6 +1680,14 @@
           "NUnit3TestAdapter": {
             "target": "Package",
             "version": "[5.0.0, )"
+          },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[4.52.0, )"
+          },
+          "Selenium.WebDriver": {
+            "target": "Package",
+            "version": "[4.52.0, )"
           },
           "coverlet.collector": {
             "target": "Package",
