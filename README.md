@@ -137,7 +137,7 @@ The report is written to `reports/zap-baseline.html`. The scan exits with a non-
 - [x] Solution skeleton and tooling
 - [x] Configuration and environment settings
 - [x] Driver lifecycle and base test class
-- [x] Login page object and first web test
+- [ ] Login page object and first web test
 - [ ] Explicit waits and data-driven web tests
 - [ ] RestSharp API client
 - [ ] API functional test suite
